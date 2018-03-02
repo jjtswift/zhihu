@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>服药管理系统</title>
+	<style type="text/css">
+		div{
+			width: 1097px;
+			height: 70px;
+			background: #2894FF;
+			float: left;
+		}
+		#search {
+			width: 1097px;
+			height: 60px;
+			background: white;
+			margin-left: 40px;
+			float: left;
+			padding-top: 15px;
+		}
+		#main {
+			width: 1097px;
+			height: 500px;
+			background: black;
+		}
+		#footer{
+			width: 1097px;
+			background: white;
+		}
+		.ks {
+			width: 15%;
+		}
+		#lef {
+			background: white;
+			float: left;
+		}
+		#rig {
+			background: white;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+
+		<h2>服药管理系统</h2>
+		
+	</div>
+
+	<div id="search">
+		科室<br>
+			<select name="keshi" class="ks">
+			<option value="laonianke" selected>老年科</option>
+			<option value="shenjing">神经科</option>
+			<option value="yake">牙科</option>
+			</select>
+		
+		<button style="text-align: center;margin-left: 20px;">查询科室房间情况</button>
+		<button style="margin-left: 170px;">查看信息</button>
+		<button style="margin-left: 50px;">刷新</button>
+	</div>
+	<div id="main">
+		
+	</div>
+
+	<div id="footer" style="background: white;padding-left: 100px;padding-top: 50px;">
+		<div id="lef">
+			<input type="radio" name="heji" value="heji" checked>合计 
+			35
+			其中
+		</div>
+		<div id="rig">
+			<form>
+				<img src="file:///C:/Users/ASUS!/Desktop/index/u52.png">高温病人
+				<img src="file:///C:/Users/ASUS!/Desktop/index/u88.png">新病人
+				<img src="">
+				<img src="">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
