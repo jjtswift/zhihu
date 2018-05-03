@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>下拉菜单</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	 body{
+    background-color: #000;
+   }
+   * {
+    margin: 0;
+    padding: 0;
+    }
+    .container {
+    margin: 30px auto;
+    width: 90%;
+    }
+    li{
+    	width: 200px;
+    	height: 50px;
+    	margin-top: 2px;
+      background:linear-gradient(#4D7CAE, #375A7F);
+    }
+    .menu li:hover > a {
+      background: #00204A;
+      color:#51ADCF ;
+      border-bottom: 2px solid #2E383F;
+      border-left: 4px solid #51ADCF;
+    }
+    .menu li:hover > a{
+       animation: myfirst 5s;
+       -moz-animation: myfirst 5s;  /* Firefox */
+       -webkit-animation: myfirst 5s; /* Safari 和 Chrome */
+       -o-animation: myfirst 5s;  /* Opera */
+    }
+    .menu, .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /*float: left;*/
+    }
+    .menu>li{
+    	  display: block;
+        float: left;
+        position: relative;
+    }
+    .one li {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    -webkit-transition: opacity .4s, -webkit-transform .5s;
+    -moz-transition: opacity .4s, -moz-transform .5s;
+    -ms-transition: opacity .4s, -ms-transform .5s;
+    -o-transition: opacity .4s, -o-transform .5s;
+    transition: opacity .4s, transform .5s;
+}
+    .menu a {
+    display: block;
+    font-family: 'Lucida Console';
+    font-size: 18px;
+    line-height: 54px;
+    padding: 0 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #E7F5F2
+    } 
+.menu > li:hover .one li, .menu > li:focus .one li {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+	</style>
+</head>
+<body>
+   <div class="container">
+   	<ul class="menu">
+   		<li><a href="#">1</a>
+   		<ul class="one" >
+   			<li><a href="#">a</a></li>
+   			<li><a href="#">a</a></li>
+   			<li><a href="#">a</a></li>
+   		</ul>
+   	    </li>
+   		<li><a href="#">2</a>
+   		<ul class="one" >
+   			<li><a href="#">a</a></li>
+   			<li><a href="#">a</a></li>
+   			<li><a href="#">a</a></li>
+   		</ul>
+   	    </li>
+   		<li><a href="#" >3</a>
+   		<ul class="one">
+   			<li><a href="#">a</a></li>
+   			<li><a href="#">a</a></li>
+   			<li><a href="#">a</a></li>
+   		</ul>
+   	    </li>
+   	</ul>
+   </div> 		
+</body>
+</html>
